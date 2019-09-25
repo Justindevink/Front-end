@@ -93,14 +93,14 @@ header {
     background-image: url(images/header.jpg);
     background-position: center;
     background-size: cover;
-    height: 110svh;
+    height: 100vh;
 }
 
 .headerdetail {
     background-image: url(images/headerdetail.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 
 h1 {
@@ -120,7 +120,11 @@ h2 {
 /* Header desktop */
 @media all and (min-width: 600px) {
     header {
-        height: 90vh;
+        height: 100vh;
+    }
+
+    .detailheader {
+        height: 100vh;
     }
 
     h1 {
@@ -316,9 +320,9 @@ button:hover {
 /* detail desktop */
 @media all and (min-width: 600px) {
     .detailtekst {
-    padding-left: 9em;
-    padding-right: 10em;
-}
+        padding-left: 9em;
+        padding-right: 10em;
+    }
 
 }
 
