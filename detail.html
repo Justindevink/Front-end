@@ -16,15 +16,24 @@
     <header class="headerdetail">
 
         <!-- Navigatie -->
-        <nav class="navbar">
+              <nav class="navbardetail">
             <ul class="navlinks">
                 <li class="logo"><a href="index.html" class="logotekst">Foodtruck Booking<i class="fas fa-truck"></i></a></li>
-                <li class="navitems"><a href="verhuur.html" class="navtekst">Verhuur een Foodtruck</a></li>
-                <li class="navitems"><a href="registreer.html" class="navtekst">Registreren</a></li>
-                <li class="navitems"><a href="inlog.html" class="navtekst">Inloggen</a></li>
+                <li class="navitems"><a href="" class="navtekst">Verhuur een Foodtruck</a></li>
+                <li class="navitems"><a href="" class="navtekst">Registreren</a></li>
+                <li class="navitems"><button id="inlogknop">Inloggen</button></li>
             </ul>
         </nav>
-
+        <form action="#">
+            <fieldset>
+               <legend>Inloggen</legend>
+                <label for="username">Gebruikersnaam</label>
+                <input type="text" id="username" name="username" required placeholder="Gebruikersnaam">
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" name="password" required placeholder="Wachtwoord">
+                <input type="submit" value="Login">
+            </fieldset>
+        </form>
     </header>
 
     <main>
@@ -45,6 +54,7 @@
             </article>
             <div class="infoknop">
                 <article class="info">
+                   <ul></ul>
                     <p class="infotekst">Categorie: <i>Ijs, wafels</i></p>
                     <p class="infotekst">Evenementen: <i>Food festivals, verjaardagen, trouwerijen</i></p>
                     <p class="infotekst">Prijsklasse: <i>€80 per uur</i></p>
@@ -52,7 +62,7 @@
                     <p class="infotekst">Aantal medewerkers: <i>2</i></p>
                     <p class="infotekst">Kenmerken: <i>Biologisch, Vegetarisch</i></p>
                 </article>
-                <button>Reserveer</button>
+                <button class="reserveerknop">Reserveer</button>
             </div>
         </section>
     </main>
@@ -61,6 +71,7 @@
         <p class="footertekst"> Dit is een footer!</p>
     </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>
